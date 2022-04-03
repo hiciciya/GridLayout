@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid_01</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: [col1-start] 100px [col2-start] 100px [col3-start] 100px [col3-end];
+        grid-template-rows: [row1-start] 80px [row2-start ]80px [row2-end];
+        grid-gap: 10px;
+      }
+      .box {
+        background-color: black;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        line-height: 80px;
+      }
+      .a {
+        grid-column: col1-start / col3-start;
+        grid-row: 1/2;
+      }
+      .b {
+        grid-column: col3-start/col3-end;
+        grid-row: row1-start/row2-end;
+      }
+      .c {
+      }
+      .d {
+      }
+      .e {
+      }
+      .f {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box a">A</div>
+      <div class="box b">B</div>
+      <div class="box c">C</div>
+      <div class="box d">D</div>
+    </div>
+  </body>
+</html>
